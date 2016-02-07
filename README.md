@@ -28,7 +28,7 @@ capacity[5][4] = 1
 Next init cost matrix and make sure that we have one edge with higher cost (as in image above)
 ``` swift
 var cost = [[Int]](count: N, repeatedValue: [Int](count: N, repeatedValue: 0))
-// add edge with hight cost
+// add edge with higher cost
 cost[0][5] = 1
 ```
 
