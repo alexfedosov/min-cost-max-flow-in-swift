@@ -14,6 +14,15 @@ First, lets describe it using capacity matrix
 // vertex count
 let N = 6
 var capacity = [[Int]](count: N, repeatedValue: [Int](count: N, repeatedValue: 0))
+
+// connect edges with capacity 1
+capacity[0][1] = 1
+capacity[0][2] = 1
+capacity[0][5] = 1
+capacity[2][3] = 1
+capacity[3][4] = 1
+capacity[1][5] = 1
+capacity[5][4] = 1
 ```
 
 Next init cost matrix and make sure that we have one edge with higher cost (as in image above)
